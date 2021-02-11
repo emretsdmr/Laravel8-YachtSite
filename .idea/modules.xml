@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Laravel8-Kafe/.idea/Laravel2j.iml" filepath="$PROJECT_DIR$/../Laravel8-Kafe/.idea/Laravel2j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Laravel8-OguzMarin.iml" filepath="$PROJECT_DIR$/.idea/Laravel8-OguzMarin.iml" />
+    </modules>
+  </component>
+</project>
