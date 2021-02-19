@@ -55,6 +55,7 @@ class YachtController extends Controller
         $data->crew = $request->input('crew');
         $data->status = $request->input('status');
         $data->image=Storage::putFile('images',$request->file('image'));
+        $data->video=Storage::putFile('videos',$request->file('video'));
         $data->save();
         return redirect()->route('admin_yachts');
     }
@@ -110,6 +111,10 @@ class YachtController extends Controller
         if($request->file('image')!=null)
         {
             $data->image=Storage::putFile('images',$request->file('image'));
+        }
+        if($request->file('video')!=null)
+        {
+            $data->video=Storage::putFile('videos',$request->file('video'));
         }
         $data->save();
         return redirect()->route('admin_yachts');

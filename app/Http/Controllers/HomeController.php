@@ -37,7 +37,8 @@ class HomeController extends Controller
     {
         $datalist=Yacht::where('id',$id)->get();
         $data=Yacht::find($id);
-        return view('home.yacht_details',['data'=>$data,'datalist'=>$datalist]);
+        $images=Image::where('yacht_id',$id)->get();
+        return view('home.yacht_details',['data'=>$data,'datalist'=>$datalist,'images'=>$images]);
     }
     public function yachtimages($id)
     {

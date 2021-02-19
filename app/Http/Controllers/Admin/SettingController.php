@@ -99,7 +99,9 @@ class SettingController extends Controller
         $data->aboutus = $request->input('aboutus');
         $data->aboutustr = $request->input('aboutustr');
         $data->policies = $request->input('policies');
+        $data->policiestr = $request->input('policiestr');
         $data->ourteam = $request->input('ourteam');
+        $data->ourteamtr = $request->input('ourteamtr');
         $data->status = $request->input('status');
         $data->save();
         return redirect()->route('admin_setting');

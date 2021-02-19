@@ -15,7 +15,7 @@
 @section('content')
     <!-- bradcam_area_start -->
     <div class="bradcam_area breadcam_bg_1">
-        <h3>Yachts</h3>
+        <img src="{{asset('assets')}}/img/specialfonts/yatlar.png">
     </div>
     <!-- bradcam_area_end -->
 
@@ -65,5 +65,21 @@
                 </div>
             </div>
         </div>
+    @if($data->video)
+        <!-- video_area_start -->
+            <div class="video_area video_bg overlay">
+                <div class="video_area_inner text-center">
+                    @foreach($datalist as $rs)
+                        <span>Bodrum Oğuz Marin</span>
+                        <h3>{{$rs->title}} <br>
+                            Video </h3>
+                        <a href="{{Storage::url($rs->video)}}" class="video_btn popup-video">
+                            <i class="fa fa-play"></i>
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+            <!-- video_area_end -->
+        @endif
     </div>
 @endsection

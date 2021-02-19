@@ -47,6 +47,7 @@
             @endforeach
         </div>
     </div>
+
     <!-- features_room_end -->
     <!-- offers_area_end -->
 @endsection

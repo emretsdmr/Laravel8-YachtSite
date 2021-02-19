@@ -41,6 +41,7 @@
                                             <th>id</th>
                                             <th>Title</th>
                                             <th>Image</th>
+                                            <th>Video</th>
                                             <th>Type</th>
                                             <th>Length Over All (LOA)</th>
                                             <th>Engine(s)</th>
@@ -68,6 +69,11 @@
                                             <td>
                                                 @if($rs->image)
                                                     <img src="{{Storage::url($rs->image)}}" height="30" alt="">
+                                                @endif
+                                            </td>
+                                            <td>
+                                                @if($rs->video)
+                                                    <video src="{{Storage::url($rs->video)}}" height="30" alt="">
                                                 @endif
                                             </td>
                                             <td>{{$rs->type}}</td>

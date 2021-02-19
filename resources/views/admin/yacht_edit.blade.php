@@ -118,11 +118,21 @@
                                 <input type="text" name="crew" value="{{$data->crew}}" class="form-control" >
                             </div>
                         </div>
+                        <label>Image</label>
                         <div class="form-group">
                             <div class="form-line">
                                 <input type="file" name="image" class="form-control" >
                                 @if($data->image)
                                     <img src="{{Storage::url($data->image)}}" height="60" alt="">
+                                @endif
+                            </div>
+                        </div>
+                        <label>Video</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="file" name="video" class="form-control" >
+                                @if($data->video)
+                                    <video src="{{Storage::url($data->video)}}" height="60" alt="">
                                 @endif
                             </div>
                         </div>
